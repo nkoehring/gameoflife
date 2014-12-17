@@ -1,0 +1,20 @@
+!!! 5
+%html
+  %head
+    %title Game Of Life in CoffeScript
+    %script( src="app.js" )
+    %style
+      body { background: #AAA; text-align: center; }
+      h1,h2,p { line-height: 1em; margin: 0; padding: 0; }
+      table { border-collapse: collapse; border: 1px solid black; margin: auto; margin-top: 2em; }
+      table td { border: 1px dotted gray; }
+      table td.alive { background-color: black; border: 1px solid black; transition: background-color 10s ease-in; }
+
+  %body
+    %header
+      %h1 Conways Game Of Life
+      %h2 using DOM manipulation
+      %p written in CoffeeScript
+
+    %script
+      gol = new GameOfLife("game", 50);

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Of Life in CoffeScript</title>
+    <script src='app.js'></script>
+    <style>
+      body { background: #AAA; text-align: center; }
+      h1,h2,p { line-height: 1em; margin: 0; padding: 0; }
+      table { border-collapse: collapse; border: 1px solid black; margin: auto; margin-top: 2em; }
+      table td { border: 1px dotted gray; }
+      table td.alive { background-color: black; border: 1px solid black; transition: background-color 10s ease-in; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Conways Game Of Life</h1>
+      <h2>using DOM manipulation</h2>
+      <p>written in CoffeeScript</p>
+    </header>
+    <script>
+      gol = new GameOfLife("game", 50);
+    </script>
+  </body>
+</html>
